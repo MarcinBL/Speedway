@@ -1,5 +1,5 @@
 class RidersController < ApplicationController
-        def index
+    def index
     @riders = Rider.all
     end
   

@@ -1,9 +1,11 @@
-<h2><%= @rider.name %></h2>
-<h3><%= @rider.age %></h3>
+<h2>Imię i nazwisko:</h2>
+<h1><%= @rider.name %></h1>
+<h3>Wiek: <%= @rider.age %> lata</h3>
   
 <p>
-  Zdjęcie
+    <%= image_tag @rider.photo, class: "photo" %>
 </p>
+
 
 
 <%= link_to 'Back', riders_path %>

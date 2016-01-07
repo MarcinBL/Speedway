@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Workspace</title>
+  <title>Liga żużlowa</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+ <body>
+        <%= render 'layouts/header' %>
+        <%= link_to image_tag("logoliga.jpg", class: "logo"), '#' %>
+
+      <div class="container">
 
 <%= yield %>
+<p></p>
+      <%= render 'layouts/footer' %>
 
 </body>
 </html>
+
