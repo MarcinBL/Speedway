@@ -32,14 +32,14 @@ class RidersController < ApplicationController
         end
     end
     def destroy
-     @rider = rider.find(params[:id])
+     @rider = Rider.find(params[:id])
      @rider.destroy
      redirect_to riders_path
     end
 
  private
   def rider_params
-    params.require(:rider).permit(:name, :age, :photo)
+    params.require(:rider).permit(:name, :age, :druzyna, :photo)
   end
 
 

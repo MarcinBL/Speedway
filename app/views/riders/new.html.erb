@@ -1,20 +1,24 @@
-<h2>Nowy Zawodnik</h2>
+<h1>Nowy Zawodnik</h1>
  
  <%= form_for :rider, url: riders_path do |f| %>
   <p>
-    <%= f.label :name %><br>
+    <%= f.label 'Imię' %><br>
     <%= f.text_field :name %>
   </p>
   <p>
-    <%= f.label :age %><br>
+    <%= f.label 'Wiek' %><br>
     <%= f.text_field :age %>
   </p>
   <p>
-      <%= f.label :photo %><br>
+    <%= f.label 'Drużyna' %><br>
+    <%= f.text_field :druzyna %>
+  </p>
+  <p>
+      <%= f.label 'Zdjęcie' %><br>
       <%= f.file_field :photo %>
   </p>
   <p>
     <%= f.submit %>
   </p>
 <% end %>
-<%= link_to 'Back', riders_path %>
+<%= link_to 'Wróc', riders_path %>

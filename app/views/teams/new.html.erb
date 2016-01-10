@@ -2,15 +2,15 @@
 <%= form_for :team, url: teams_path do |f| %>
    
   <p>
-    <%= f.label :teamname %><br>
+    <%= f.label 'Nazwa Drużyny' %><br>
     <%= f.text_field :teamname %>
   </p>
    <p>
-    <%= f.label :coach %><br>
+    <%= f.label 'Trener' %><br>
     <%= f.text_area :coach %>
   </p>
   <p>
-    <%= f.label :year %><br>
+    <%= f.label 'Rok Zalożenia' %><br>
     <%= f.text_field :year %>
   </p>
    <p>
@@ -18,4 +18,4 @@
   </p>
 <% end %>
 
-<%= link_to 'Back', teams_path %>
+<%= link_to 'Wróć', teams_path %>
