@@ -11,7 +11,7 @@
       <td><%= rider.name %></td>
       <td><%= link_to 'Pokaż', rider_path(rider) %></td>
       <td><%= link_to 'Edycja', edit_rider_path(rider) %></td>
-      <td><%= link_to 'Unuń', rider_path(rider),
+      <td><%= link_to 'Usuń', rider_path(rider),
               method: :delete,
               data: { confirm: 'Czy jestes pewien?' } %></td>
       </tr>

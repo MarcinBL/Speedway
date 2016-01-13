@@ -25,7 +25,7 @@ class TeamsController < ApplicationController
     end
    
     def update
-    @team = team.find(params[:id])
+    @team = Team.find(params[:id])
         if @team.update(team_params)
         redirect_to @team
         else
@@ -41,7 +41,7 @@ class TeamsController < ApplicationController
 
  private
   def team_params
-    params.require(:team).permit(:teamname, :year, :coach)
+    params.require(:team).permit(:teamname, :year, :trener)
   end
 
 

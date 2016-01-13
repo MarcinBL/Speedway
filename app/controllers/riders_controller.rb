@@ -1,6 +1,9 @@
 class RidersController < ApplicationController
     def index
-    @riders = Rider.all
+        @riders = Rider.all
+         if params[:search]
+           @riders = Rider.search(params[:search])
+         end
     end
   
   def show
